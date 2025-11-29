@@ -275,7 +275,7 @@ body {
   color: var(--cc-text-soft);
 }
 
-/* Tables (SCA / access tables) */
+/* Tables (SCA factors) */
 
 .table-wrap {
   margin-top: 1.25rem;
@@ -314,7 +314,7 @@ body {
   background: rgba(15, 23, 42, 0.75);
 }
 
-/* Identity / access cluster cards */
+/* Identity cluster cards */
 
 .cluster-grid {
   display: grid;
