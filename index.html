@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Access.Creditcard – Cardholder Access & Privileges Explained</title>
-  <meta name="description" content="Understand what 'access' means for credit cards: ATM networks, lounge access, digital wallets, account controls, multi-card permissions and how these access features impact usability and security." />
+  <title>Access.Creditcard – Authentication, Wallet Access & Security Layers</title>
+  <meta name="description" content="How access controls work in modern credit card systems: device authentication, biometric checks, wallet security, token permission layers and issuer-side access rules." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://access.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Access.Creditcard – Cardholder Access & Privileges Explained" />
-  <meta property="og:description" content="Neutral overview of access-related features on credit cards: giving you control over funds, ATM withdrawals, lounge entry, digital wallet compatibility and account management privileges." />
+  <meta property="og:title" content="Access.Creditcard – How Credit-Card Access Controls Work" />
+  <meta property="og:description" content="Device authentication, biometrics, tokenization and wallet access — explained in plain language." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://access.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=access.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Access.Creditcard – Cardholder Access & Privileges Explained" />
-  <meta name="twitter:description" content="Learn how ATM access, lounge privileges, digital wallet support, multi-card permissions and more are structured — and what to check before you rely on them." />
+  <meta name="twitter:title" content="Access.Creditcard – Authentication & Wallet Security" />
+  <meta name="twitter:description" content="Learn how card access, biometrics and digital-wallet authentication work behind the scenes." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=access.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -31,191 +31,228 @@
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <!-- Tailwind for utility classes -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Shared minisite styles -->
+  <!-- Minisite shared styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body class="bg-slate-950 text-slate-100">
-  <header class="site-header">
-    <div class="nav-inner max-w-6xl">
-      <div class="brand">
-        <div class="cc-logo">CC</div>
-        <div class="brand-text">
-          <div class="brand-title">Access.Creditcard</div>
-          <div class="brand-subtitle">Cardholder Access & Privileges</div>
-        </div>
+<header class="site-header">
+  <div class="nav-inner max-w-6xl">
+    <div class="brand">
+      <div class="cc-logo">CC</div>
+      <div class="brand-text">
+        <div class="brand-title">Access.Creditcard</div>
+        <div class="brand-subtitle">Authentication & Wallet Access Layers</div>
       </div>
-      <nav class="nav-links" aria-label="Page navigation">
-        <a href="#overview">Overview</a>
-        <a href="#mechanics">How Access Features Work</a>
-        <a href="#compare">Compare Access Features</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="cc-page">
-    <!-- Breadcrumb -->
-    <div class="cc-breadcrumb">
-      <a href="https://choose.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
-      &nbsp;›&nbsp;
-      Access.Creditcard
     </div>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>What “Access” Means for Credit Card Users</h1>
-        <p class="hero-lead">
-          “Access” describes the privileges, network options and account controls that come with your card — from ATM withdrawals and lounge entry to digital wallet readiness and multi-card management. This page explains what to look for if you care about flexibility, usability and control.  
-        </p>
-        <a class="cta" href="https://choose.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Compare credit cards by access features
-        </a>
-      </div>
-    </section>
+    <nav class="nav-links" aria-label="Page navigation">
+      <a href="#overview">Overview</a>
+      <a href="#layers">Access Layers</a>
+      <a href="#biometrics">Biometrics</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Content sections -->
-    <section id="overview" class="section">
-      <h2>What Types of Access Can a Credit Card Give You?</h2>
-      <p>Access includes physical privileges such as ATM withdrawal networks, global ATM access, lounge entry, airport perks, and merchant-network coverage (e.g. Visa, Mastercard). It also includes digital and account privileges — virtual cards, wallet support, multi-currency features, spending controls, and shared-card or supplementary-card management.</p>
-      <p>These access features often define how usable a card is in daily life: whether you can get cash abroad, pay with your phone, share benefits with family members, or control spending limits from an app.</p>
-    </section>
+<main class="cc-page">
 
-    <section id="mechanics" class="section">
-      <h2>How Access Features Are Structured Under the Hood</h2>
-      <p>When a card is issued, the provider embeds certain privileges in its profile: which ATM networks it supports, whether it qualifies for lounge-entry programs, wallet compatibility, supplementary cards and global FX settings. These settings travel with the card’s account number and credentials.</p>
-      <p>For digital access (virtual cards, wallets, online payments), the issuer or network generates tokens or secondary credentials tied to the same account, allowing secure use without exposing the primary card number. For physical privileges (ATMs, lounges), issuers often rely on network agreements, issuer-level registrations and partner credentials to grant access when the card is presented.</p>
-    </section>
+  <!-- Breadcrumb -->
+  <div class="cc-breadcrumb">
+    <a href="https://choose.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+    &nbsp;›&nbsp;
+    Access.Creditcard
+  </div>
 
-    <section class="section">
-      <h2>Common Access Scenarios: Cash, Travel, Digital & Shared Use</h2>
-      <p>Many users value ATM access and global withdrawal when traveling — especially in regions where cards are less common. Lounge entry, airport perks or travel-related status upgrades become relevant if you fly regularly. Digital access covers seamless online or mobile payments, wallets and virtual-card support. Shared or supplementary cards give family members or business partners controlled access under one account umbrella.</p>
-      <p>Choosing a card with broad access features is especially important if you travel, move frequently between countries, pay online often, or manage multiple cards under one account.</p>
-    </section>
-
-    <section class="section">
-      <h2>Potential Limits, Fees and Risk Considerations</h2>
-      <p>With access privileges come trade-offs. ATM withdrawals abroad may trigger high fees or poor exchange rates; lounge access might require a separate pass or only allow limited visits per year. Virtual cards and wallets may be subject to issuer caps, tokenization expiry or extra security steps. Shared or supplementary cards can complicate account management and liability, especially if you’re responsible for all spend on the main account.</p>
-      <p>Security is also a concern: more access options may increase attack surface. Cards with broad privileges often need stronger authentication, real-time alerts and immediate lock/unlock controls in case of loss or compromise.</p>
-    </section>
-
-    <!-- Comparison block -->
-    <section id="compare" class="section">
-      <h2>Compare Access Features Across Card Offers</h2>
-      <div class="table-wrap">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Access Type</th>
-              <th>What to Look For</th>
-              <th>Why It Matters</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Global ATM & Cash Withdrawal</td>
-              <td>Supported networks, withdrawal fees, FX rates</td>
-              <td>Determines usefulness when travelling or abroad.</td>
-            </tr>
-            <tr>
-              <td>Travel & Lounge Privileges</td>
-              <td>Airport lounge access, guest policies, travel-related perks</td>
-              <td>Adds value for frequent flyers or travellers seeking comfort and flexibility.</td>
-            </tr>
-            <td>Digital & Virtual Card Support</td>
-            <td>Wallet compatibility, virtual cards, tokenization, online use</td>
-            <td>Enables secure digital payments and offers flexibility for online subscriptions or app-based payments.</td>
-            <tr>
-              <td>Supplementary Cards & Shared Access</td>
-              <td>Number of extra cards allowed, individual limits, joint access control</td>
-              <td>Useful for families, partners or business use under one account.</td>
-            </tr>
-            <tr>
-              <td>Account Controls & Security</td>
-              <td>Freeze/unfreeze, spend limits, notification tools, zero-liability policies</td>
-              <td>Protects against fraud and makes access safe even when privileges are broad.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="small">
-        For live product-by-product comparisons, visit
-        <a href="https://choose.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          Choose.Creditcard
-        </a>.
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>How Credit-Card Access & Authentication Really Works</h1>
+      <p class="hero-lead">
+        From biometrics to wallet locks, modern cards rely on layered access systems that determine whether your transaction is allowed — long before it reaches the issuer.
       </p>
-    </section>
-
-    <!-- Related links / cluster -->
-    <section class="section">
-      <h2>Explore Related Credit-Card Topics</h2>
-      <div class="cluster-grid">
-        <a class="cluster-card" href="https://benefits.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_benefits">
-          <h3>Benefits.Creditcard</h3>
-          <p>Detailed look at premium perks, privileges and travel benefits.</p>
-        </a>
-        <a class="cluster-card" href="https://digitalpay.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_digitalpay">
-          <h3>DigitalPay.Creditcard</h3>
-          <p>How digital payments, virtual cards and wallet integration work.</p>
-        </a>
-        <a class="cluster-card" href="https://loyalty.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_loyalty">
-          <h3>Loyalty.Creditcard</h3>
-          <p>How loyalty systems and status interact with access perks and privileges.</p>
-        </a>
-        <a class="cluster-card" href="https://travelrewards.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_travelrewards">
-          <h3>TravelRewards.Creditcard</h3>
-          <p>Travel-focused cards combining rewards and access benefits.</p>
-        </a>
-        <a class="cluster-card" href="https://compare.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_compare">
-          <h3>Compare.Creditcard</h3>
-          <p>Side-by-side comparison of cards across access, benefits and fees.</p>
-        </a>
-      </div>
-    </section>
-
-    <!-- Collection section -->
-    <section class="section">
-      <h2>Part of The CreditCard Collection</h2>
-      <p class="small">
-        Access.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a curated set of microsites by ronarn AS, each dedicated to one aspect of card functionality. This page helps you understand how access features vary between cards and why they matter.  
-      </p>
-
-      <p class="small">
-        We do not issue cards or grant access ourselves. Content is based on publicly available documentation, network rules and issuer disclosures. Use this information to compare offers and make informed decisions.  
-      </p>
-
-      <p class="small">
-        This is not financial, security or legal advice. Access policies, fees and privileges differ by issuer, region and card type — always review current card terms and benefits before applying or relying on features.  
-      </p>
-
-      <!-- REQUIRED HUB SNIPPET — roots to main site -->
-      <div class="hub-link">
-        <a href="https://choose.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
-           class="text-sm text-slate-600 hover:text-slate-900">
-          Explore more on Choose.Creditcard
-        </a>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section">
-      <h2>Ready to Evaluate Credit Cards by Access?</h2>
-      <p class="small">
-        Use Access.Creditcard to learn what access features you care about — then visit the main comparison hub to compare cards based on ATM networks, lounge rights, digital wallet support and account controls.  
-      </p>
-      <a class="cta" href="https://choose.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-        Go to Choose.Creditcard
+      <a class="cta" href="https://choose.creditcard/technology/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+        Explore the Technology Hub
       </a>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="mini-footer">
-    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
-    <p class="mini-footer-contact">
-      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+  <!-- Overview -->
+  <section id="overview" class="section">
+    <h2>What “Access” Means in Modern Card Payments</h2>
+    <p>
+      Access refers to the authentication steps that must pass before a credit card can be used:
+      unlocking the device, proving the wallet belongs to you, validating the token and confirming
+      issuer permissions.
     </p>
-  </footer>
+
+    <p>
+      These checks happen <strong>before the transaction reaches the network</strong>. They prevent
+      unauthorized use of your card, even if the card number or token is compromised.
+    </p>
+
+    <ul>
+      <li><strong>Device authentication:</strong> PIN, fingerprint, Face ID or pattern.</li>
+      <li><strong>Wallet-level access:</strong> Apple Pay, Google Wallet, Samsung Wallet security rules.</li>
+      <li><strong>Token permissions:</strong> Merchant-locked, device-locked or disposable numbers.</li>
+      <li><strong>Issuer-level access:</strong> App locks, region locks, spending limits and risk scoring.</li>
+    </ul>
+  </section>
+
+  <!-- Access Layers -->
+  <section id="layers" class="section">
+    <h2>The 4 Main Access Layers</h2>
+
+    <h3>1. Device-Level Access</h3>
+    <p>
+      Your phone or wearable must first be unlocked using biometrics or a passcode. Without this step,
+      wallet tokens cannot be used.
+    </p>
+
+    <h3>2. Wallet-Level Access</h3>
+    <p>
+      Wallet apps have their own rules: some require re-authentication for high-value transactions,
+      new cards, or if the device has been recently rebooted.
+    </p>
+
+    <h3>3. Token-Level Access</h3>
+    <p>
+      Even if someone knows your card number, the token used in digital wallets is device-specific.
+      Stealing the number doesn’t allow access to the token.
+    </p>
+
+    <h3>4. Issuer-Level Access</h3>
+    <p>
+      Banks can freeze categories, require step-up authentication, or block transactions based on
+      risk patterns or location.
+    </p>
+  </section>
+
+  <!-- Biometrics -->
+  <section id="biometrics" class="section">
+    <h2>Biometrics & Strong Customer Authentication</h2>
+    <p>
+      Biometrics (Face ID, fingerprint) are central to access control. They act as a second factor
+      combined with the device and token.
+    </p>
+
+    <ul>
+      <li><strong>Face/fingerprint match:</strong> Required before wallet activation.</li>
+      <li><strong>Step-up authentication:</strong> Triggered for high-value or unusual transactions.</li>
+      <li><strong>Fallbacks:</strong> PIN or passcode used if biometrics fail.</li>
+    </ul>
+
+    <p>
+      If a device is stolen, tokens cannot be used without biometrics or the fallback code.
+      This is why digital wallets are safer than physical cards in many cases.
+    </p>
+  </section>
+
+  <!-- Table -->
+  <section class="section">
+    <h2>Where Access Controls Matter Most</h2>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>Access Requirement</th>
+          <th>Why It Matters</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Phone tap-to-pay</td>
+          <td>Biometric unlock + wallet token</td>
+          <td>Unauthorized users cannot access the card.</td>
+        </tr>
+        <tr>
+          <td>Wearable payments</td>
+          <td>Wrist detection + passcode</td>
+          <td>Payment disables if the device leaves your wrist.</td>
+        </tr>
+        <tr>
+          <td>Online checkout</td>
+          <td>3DS + device recognition</td>
+          <td>Issuer verifies that it is you, not a stolen card number.</td>
+        </tr>
+        <tr>
+          <td>Virtual cards</td>
+          <td>Wallet/issuer access unlock</td>
+          <td>Single-use tokens prevent unauthorized reuse.</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Cluster Links -->
+  <section class="section">
+    <h2>Related Technology Minisites</h2>
+    <div class="cluster-grid">
+      <a class="cluster-card" href="https://verify.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_verify">
+        <h3>Verify.Creditcard</h3>
+        <p>How cards are validated and authenticated.</p>
+      </a>
+      <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
+        <h3>VirtualPay.Creditcard</h3>
+        <p>Tokenized virtual card numbers.</p>
+      </a>
+      <a class="cluster-card" href="https://wearable.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_wearable">
+        <h3>Wearable.Creditcard</h3>
+        <p>Payments using watches, rings and devices.</p>
+      </a>
+      <a class="cluster-card" href="https://nfc.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_nfc">
+        <h3>NFC.Creditcard</h3>
+        <p>NFC communication & tap-to-pay logic.</p>
+      </a>
+      <a class="cluster-card" href="https://digitalid.creditcard/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=cluster_digitalid">
+        <h3>DigitalID.Creditcard</h3>
+        <p>Identity verification in wallets & apps.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Snippet -->
+  <section class="section">
+    <h2>Part of The CreditCard Collection</h2>
+    <p class="small">
+      Access.Creditcard is part of the security and technology cluster in The CreditCard Collection.
+      This minisite explains the authentication layers behind every digital card transaction.
+    </p>
+
+    <div class="hub-link">
+      <a href="https://choose.creditcard/technology/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+         class="text-sm text-slate-400 hover:text-slate-100">
+        Learn more at the Technology Hub
+      </a>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="section">
+    <h2>Ready to Explore Modern Payment Security?</h2>
+    <p class="small">
+      The Technology Hub covers tokenization, wearables, NFC, digital wallets and more.
+      Start there for the complete picture.
+    </p>
+
+    <a class="cta" href="https://choose.creditcard/technology/?utm_source=access.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+      Go to Technology Hub
+    </a>
+  </section>
+
+</main>
+
+<footer class="mini-footer">
+  <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+  <p class="mini-footer-contact">
+    Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+  </p>
+</footer>
+
 </body>
 </html>
